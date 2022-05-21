@@ -46,7 +46,12 @@ class User {
   userOne.getFullName();
   userOne.addPets('Spike', 'Loki', 'Grumpy', 'Rocky', 'Raiden');
   userOne.countPets();
-  userOne.addBooks({nameBook: 'Angels & Demons', author: 'Dan Brown'}, {nameBook: 'James Bond 007', author: 'Ian Fleming'});
+  userOne.addBooks( 
+      {nameBook: 'James Bond 007', author: 'Ian Fleming'},
+      {nameBook: 'Eloquent JavaScript', author: 'Marijn Haverbeke'},
+      {nameBook: 'Black Hawk Down', author: 'Mark Bowden'},
+      {nameBook: 'Angels & Demons', author: 'Dan Brown'}
+    );
   userOne.getBookNames();
 
 
