@@ -1,1 +1,0 @@
-[{"nombre":"Buenos Aires","poblacion":12000},{"nombre":"Sao Pablo","poblacion":12000},{"nombre":"Caracas","poblacion":12000}]
