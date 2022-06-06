@@ -1,0 +1,26 @@
+{
+  "name": "desafio_1",
+  "version": "1.0.0",
+  "description": "Entregables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Desafio3/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorVega007/CursoBackend.git"
+  },
+  "author": "Victor Vega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorVega007/CursoBackend/issues"
+  },
+  "homepage": "https://github.com/VictorVega007/CursoBackend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
