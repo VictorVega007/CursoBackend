@@ -75,7 +75,7 @@ class Container {
           id = Number(id);
           const dataParsed = await this.parsedData();
           const itemToRemove = dataParsed.find(
-            (producto) => producto.id === id
+            (product) => product.id === id
           );
     
           if (itemToRemove) {
@@ -96,9 +96,9 @@ class Container {
       try {
         id = Number(id);
         const dataParsed = await this.parsedData();
-        const itemToUpdate = dataParsed.find(item => {
-          item.id === id
-        });
+        const itemToUpdate = dataParsed.find(
+          (product) => product.id === id
+        );
 
         if(itemToUpdate) {
           const item = dataParsed.indexOf(itemToUpdate);
@@ -108,7 +108,7 @@ class Container {
           dataParsed[item]['price'] = price;
           dataParsed[item]['thumbnail'] = thumbnail;
 
-          awaitfs.promises.writeFile(this.fileName, JSON.stringify(dataParsed));
+          await fs.promises.writeFile(this.fileName, JSON.stringify(dataParsed));
           return true;
         } else {
           console.log(`El item con id: ${id} no existe`);
