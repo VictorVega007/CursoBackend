@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 4</title>
+</head>
+<body>
+    <h2>Aquí puedes agregar productos</h2>
+    <form action="/api/productos" method="POST">
+        <label for="title">Producto:</label>
+        <input type="text" name="title" required placeholder="Nombre de producto">
+
+        <label for="title">Precio:</label>
+        <input type="text" name="price" required placeholder="Precio del producto">
+
+        <label for="title">Thumbnail:</label>
+        <input type="text" name="thumbnail" required placeholder="Thumbnail">
+
+        <button type="submit">Agregar el producto</button>
+    </form>
+</body>
+</html>
