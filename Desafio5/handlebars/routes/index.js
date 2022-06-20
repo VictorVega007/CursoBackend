@@ -14,12 +14,12 @@ router.get('/productos', async (req, res) => {
 router.post('/productos', async (req, res) => {
     const { body } = req;
     await container.save(body);
-    res.redirect('/')
+    res.redirect('/');
 }); 
 
 router.get('/', async (req, res) => {
-    res.render('pages/form', {})
-})
+    res.render('pages/form', {});
+});
 
 
 module.exports = router;

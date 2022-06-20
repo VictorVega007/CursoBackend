@@ -18,4 +18,4 @@ const postProducts = async (req, res) => {
 module.exports = {
     getProducts,
     postProducts
-}
+};

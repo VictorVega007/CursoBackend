@@ -1,24 +1,32 @@
-doctype html 
 html
     head 
         title="Lista de productos"
+        link(href="./styles.css" rel="stylesheet")
     body 
-        a(href="/") Agregar producto
-        h1="Lista de productos" 
+        a(class="nav-link text-center" href="/") Agregar producto
+        h1(class="text-center")="Lista de productos" 
         hr
-        if products.length>0
-            table 
-                tr 
-                    th="ID" 
-                    th="Nombre"
-                    th="Precio"
-                    th="Imágen"
-                for producto in products 
-                    tr 
-                        td=producto.id  
-                        td=producto.title  
-                        td=producto.price  
-                        td 
-                            img(src=producto.thumbnail, alt="" style="max-width: 200px;")
-        else 
-            h2 No existen productos en la lista
+        div(class="container")
+            div(class="row")
+                div(class="col md-8")
+                    if products.length>0
+                        table(class="table table-responsive table-hover table-condensed") 
+                            thead 
+                                tr 
+                                    th(scope="col" class="col-3 text-center")="ID" 
+                                    th(scope="col" class="col-3 text-center")="Nombre"
+                                    th(scope="col" class="col-3 text-center")="Precio"
+                                    th(scope="col" class="col-3 text-center")="Imagen"
+                            for producto in products 
+                                tbody 
+                                tr 
+                                    th(class="col-3 text-center")=producto.id  
+                                    td(class="col-3 text-center")=producto.title  
+                                    td(class="col-3 text-center")=producto.price  
+                                    td(class="col-3 text-center")
+                                        img(src=producto.thumbnail, alt="" style="max-width: 200px;")
+                    else 
+                        h2 No existen productos en la lista
+
+        script(src="./js/bootstrap.bundle.min.js") 
+        script(src="./js/scripts.js") 

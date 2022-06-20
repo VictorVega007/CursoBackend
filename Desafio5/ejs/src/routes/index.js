@@ -8,7 +8,7 @@ router.get('/productos', getProducts);
 router.post('/productos', postProducts);
 
 router.get('/', (req, res) => {
-    res.render('pages/form', {})
+    res.render('pages/form', {});
 });
 
 module.exports = router;

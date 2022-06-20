@@ -17,7 +17,7 @@ router.post('/productos', async (req, res) => {
 });
 
 router.get('/', (req, res) => {
-    res.render('form.pug', {});
+    res.render('navbar.pug', {});
 });
 
-module.exports = router
+module.exports = router;
