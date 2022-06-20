@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Desafío 5
+    body 
+        a(href="/productos") Lista de productos 
+        h2 Agregar productos 
+        form(action="/productos" method="POST")
+            label(for="title") Nombre del producto 
+            input(type="text" name="title" required="" placeholder="Nombre del producto") 
+            label(for="price") Precio del producto 
+            input(type="text" name="price" required="" placeholder="Precio del producto")
+            label(for="thumbnail") Imágen 
+            input(type="text" name="thumbnail" required="" placeholder="Imágen (URL)")
+            button(type="submit") Agregar producto 

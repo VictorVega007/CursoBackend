@@ -1,0 +1,23 @@
+html
+    head 
+        title="Lista de productos"
+    body 
+        a(href="/") Agregar producto
+        h1="Lista de productos" 
+        hr
+        if products.length>0
+            table 
+                tr 
+                    th="ID" 
+                    th="Nombre"
+                    th="Precio"
+                    th="Imágen"
+                for producto in products 
+                    tr 
+                        td=producto.id  
+                        td=producto.title  
+                        td=producto.price  
+                        td 
+                            img(src=producto.thumbnail, alt="" style="max-width: 200px;")
+        else 
+            h2 No existen productos en la lista
