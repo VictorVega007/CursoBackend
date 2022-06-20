@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 5 con EJS</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h3>Agregar producto</h3>
+    <form action="/productos" method="POST">
+        <label for="title">Nombre del producto</label>
+        <input type="text" name="title" placeholder="Nombre del producto" required>
+
+        <label for="price">Precio del producto</label>
+        <input type="text" name="price" placeholder="Precio del producto" required>
+
+        <label for="thumbnail">Imagen del producto</label>
+        <input type="text" name="thumbnail" placeholder="Imagen (URL)" required>
+
+        <button type="submit">Agregar el producto a la lista</button>
+    </form>  
+    <%- include('../partials/footer') %> 
+</body>
+</html>
