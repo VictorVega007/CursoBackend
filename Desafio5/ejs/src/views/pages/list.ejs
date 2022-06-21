@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos con EJS</title>
+    <link href="./styles.css" rel="stylesheet"/>
 </head>
     <body>
-        <%- include('../partials/header') %>
-        <h1>Productos</h1>
+        <%- include('../partials/navbar') %>
+        <h1 class="text-center">Productos</h1>
 
         <% if(products.length > 0) { %>
         
-            <table>
+            <table class="table table-sm table-hover">
                 <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Imagen</th>
+                    <th scope="col" class="col-3 text-center">ID</th>
+                    <th scope="col" class="col-3 text-center">Nombre</th>
+                    <th scope="col" class="col-3 text-center">Precio</th>
+                    <th scope="col" class="col-3 text-center">Imagen</th>
                 </tr>
 
                 <% products.forEach((product) => { %>
                     <tr>
-                        <td><%= product.id %></td>
-                        <td><%= product.title %></td>
-                        <td><%= product.price %></td>
-                        <td><img src="<%= product.thumbnail %>" alt="producto" style="max-width: 200px;"></td>
+                        <td class="text-center"><%= product.id %></td>
+                        <td class="text-center"><%= product.title %></td>
+                        <td class="text-center"><%= product.price %></td>
+                        <td class="text-center"><img src="<%= product.thumbnail %>" alt="producto" style="max-width: 200px;"></td>
                     </tr>
                 <% }) %>  
             </table>
@@ -37,5 +38,8 @@
             <% } %> 
 
         <%- include('../partials/footer') %> 
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>

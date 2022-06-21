@@ -5,11 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafío 5 con EJS</title>
+    <link href="./styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <%- include('../partials/header') %>
-    <h3>Agregar producto</h3>
-    <form action="/productos" method="POST">
+    <div class="d-flex" id="wrapper">
+
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Prueba con Handlebars</div>
+            <div class="list-group list-group-flush">
+                <%- include('../partials/navbar') %>
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary btn-sm" id="sidebarToggle">Ocultar Menu</button>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/productos">Productos</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-5 pt-3">
+                <h3>Agregar producto</h3>
+                <div class="row g-3">
+                    <form class="row g-3" action="/productos" method="POST"> 
+                        <div class="col-sm-3">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="basic-addon1">Producto</span>
+                                <input type="text" name="title" required class="form-control" placeholder="Nombre del producto" aria-label="Título" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                
+                        <div class="col-sm-3">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="basic-addon2">Precio</span>
+                                <input type="text" name="price" required class="form-control" placeholder="Precio del producto" aria-label="Precio" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                
+                        <div class="col-sm-3">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="basic-addon3">Imagen</span>
+                                <input type="text" name="thumbnail" required class="form-control" placeholder="Imagen (URL)" aria-label="Thumbnail" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                
+                        <div class="col-sm-2">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm" type="submit">Agregar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <form action="/productos" method="POST">
         <label for="title">Nombre del producto</label>
         <input type="text" name="title" placeholder="Nombre del producto" required>
 
@@ -20,7 +87,11 @@
         <input type="text" name="thumbnail" placeholder="Imagen (URL)" required>
 
         <button type="submit">Agregar el producto a la lista</button>
-    </form>  
+    </form>   -->
     <%- include('../partials/footer') %> 
+    </div>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
