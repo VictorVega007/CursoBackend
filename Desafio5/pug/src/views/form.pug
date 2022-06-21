@@ -32,30 +32,13 @@ html(lang="en")
             div(class="container-fluid px-5 pt-3")
                 div(class="row g-3")
                     form(class="row g-3" action="/productos" method="POST")
-                    label(for="title") Nombre del producto 
-                    input(type="text" name="title" required class="form-control" placeholder="Nombre del producto" aria-label="Titulo" aria-describedby="basic-addon1") 
-                    label(for="price") Precio del producto 
-                    input(type="text" name="price" required class="form-control" placeholder="Precio del producto" aria-label="Precio" aria-describedby="basic-addon1")
-                    label(for="thumbnail") Imagen 
-                    input(type="text" name="thumbnail" required class="form-control" placeholder="Imagen (URL)" aria-label="Thumbnail" aria-describedby="basic-addon1")
-                    button(class="col-sm-2 btn btn-primary btn-sm d-grid gap-2" type="submit") Agregar producto 
-
-
-
-
-
-
-
-        //- a(href="/productos" class="primary") Lista de productos
-        //- h2 Agregar productos 
-        //- form(action="/productos" method="POST")
-        //-     label(for="title") Nombre del producto 
-        //-     input(type="text" name="title" required="" placeholder="Nombre del producto") 
-        //-     label(for="price") Precio del producto 
-        //-     input(type="text" name="price" required="" placeholder="Precio del producto")
-        //-     label(for="thumbnail") Imágen 
-        //-     input(type="text" name="thumbnail" required="" placeholder="Imágen (URL)")
-        //-     button(type="submit") Agregar producto 
+                        label(for="title") Nombre del producto 
+                        input(type="text" name="title" required class="form-control" placeholder="Nombre del producto" aria-label="Titulo" aria-describedby="basic-addon1") 
+                        label(for="price") Precio del producto 
+                        input(type="text" name="price" required class="form-control" placeholder="Precio del producto" aria-label="Precio" aria-describedby="basic-addon1")
+                        label(for="thumbnail") Imagen 
+                        input(type="text" name="thumbnail" required class="form-control" placeholder="Imagen (URL)" aria-label="Thumbnail" aria-describedby="basic-addon1")
+                        button(class="col-sm-2 btn btn-primary btn-sm d-grid gap-2" type="submit") Agregar producto 
 
         script(src="./js/bootstrap.bundle.min.js") 
         script(src="./js/scripts.js") 
