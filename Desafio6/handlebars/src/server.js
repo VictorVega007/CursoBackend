@@ -30,31 +30,31 @@ app.engine('hbs', engine({
 }));
 
 io.on('connection', async(socket) => {
-    console.log('🟢 Usuario conectado')
+    console.log('🟢 User online')
     
-    const productos = await container.getAll();
-    socket.emit('welcomeList', productos );
+    const products = await container.getAll();
+    socket.emit('welcomeList', products );
     
-    const mensajes = await chat.getAll();
-    socket.emit('welcomeMessageList', mensajes);
+    const messages = await chat.getAll();
+    socket.emit('welcomeMessageList', messages);
     
     socket.on('newMessage', async(data) => {
         await chat.save(data);
         
-        const mensajes = await chat.getAll();
-        io.sockets.emit('messageListUpdated', mensajes);
+        const messages = await chat.getAll();
+        io.sockets.emit('messageListUpdated', messages);
     });
 
     socket.on('productAdded', async(data) => {
-        console.log('Alguien presionó el click');
+        console.log('Se hizo click en agregar');
         await container.save(data);
         
-        const productos = await container.getAll();
-        io.sockets.emit('listUpdated', productos);
+        const products = await container.getAll();
+        io.sockets.emit('listUpdated', products);
     })
     
     socket.on('disconnect', () => {
-        console.log('🔴 Usuario desconectado');
+        console.log('🔴 User offline');
     });
 });
 
