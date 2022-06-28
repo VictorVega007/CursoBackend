@@ -1,7 +1,7 @@
 <h2>Agregar producto al listado</h2>
 <div class="row g-3">
 
-    <form class="row g-3" action="/productos" method="POST"> 
+    <form id="myform" class="row g-3" action="/productos" method="POST"> 
     
         <div class="col-sm-3">
             <div class="input-group input-group-sm mb-3">
@@ -30,7 +30,21 @@
             </div>
         </div>
 
+        <table class="table table-sm table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+
         <hr>
+
+        <h2 class="text-primary">Centro de Mensajes</h2>
 
         <span>Conversa con otros usuarios</span>
 
@@ -44,35 +58,19 @@
         <div class="col-sm-5">
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="basic-addon3">Mensaje</span>
-                <input id="input-mensaje" type="text" name="thumbnail" required class="form-control" placeholder="Escribe tu mensaje" aria-label="message" aria-describedby="basic-addon1">
+                <input id="input-message" type="text" name="thumbnail" required class="form-control" placeholder="Escribe tu mensaje" aria-label="message" aria-describedby="basic-addon1">
             </div>
         </div>
 
-    <div class="col-sm-2">
-        <div class="d-grid gap-2">
-            <button id="btn-submit-mensaje" class="btn btn-success btn-sm" type="submit">Enviar</button>
+        <div class="col-sm-2">
+            <div class="d-grid gap-2">
+                <button id="btn-submit-message" class="btn btn-success btn-sm" type="submit">Enviar</button>
+            </div>
         </div>
-    </div>
 
-    <span>Historial de mensajes</span>
+        <div id="messages-history"></div>
+        <hr>
 
-    <div id="historial-mensajes"></div>
-
-    <hr>
-
-    <table class="table table-sm table-hover">
-        <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Imagen</th>
-            </tr>
-        </thead>
-        <tbody id="table-body">
-
-        </tbody>
-    </table>
     </form>
-    <script src="./client.js"></script>
+    <script src="./client/client.js"></script>
 </div>
