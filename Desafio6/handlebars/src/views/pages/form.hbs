@@ -1,0 +1,78 @@
+<h2>Agregar producto al listado</h2>
+<div class="row g-3">
+
+    <form class="row g-3" action="/productos" method="POST"> 
+    
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon1">Producto</span>
+                <input id="input-title" type="text" name="title" required class="form-control" placeholder="Nombre del producto" aria-label="Título" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon2">Precio</span>
+                <input id="input-price" type="text" name="price" required class="form-control" placeholder="Precio del producto" aria-label="Precio" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Imagen</span>
+                <input id="input-img" type="text" name="thumbnail" required class="form-control" placeholder="Imagen (URL)" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="d-grid gap-2">
+                <button id="btn-submit" class="btn btn-primary btn-sm" type="submit">Agregar producto</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>Conversa con otros usuarios</span>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Email</span>
+                <input id="input-email" type="email" name="thumbnail" required class="form-control" placeholder="Escribe tu email" aria-label="email" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-5">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Mensaje</span>
+                <input id="input-mensaje" type="text" name="thumbnail" required class="form-control" placeholder="Escribe tu mensaje" aria-label="message" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+    <div class="col-sm-2">
+        <div class="d-grid gap-2">
+            <button id="btn-submit-mensaje" class="btn btn-success btn-sm" type="submit">Enviar</button>
+        </div>
+    </div>
+
+    <span>Historial de mensajes</span>
+
+    <div id="historial-mensajes"></div>
+
+    <hr>
+
+    <table class="table table-sm table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+    </form>
+    <script src="./client.js"></script>
+</div>
