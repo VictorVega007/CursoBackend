@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "timestamp": "24/4/2022 18:02:18",
+      "productos": [
+        {
+          "id": 1,
+          "timestamp": "24/04/2022, 12:00:25",
+          "nombre": "PlayStation 5",
+          "descripcion": "Experimenta cargas superrápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de increíbles juegos de PlayStation®. Aprovecha la potencia de una unidad de estado sólido con E/S integradas, una CPU y una GPU personalizadas que reinventan las reglas de lo que una consola PlayStation es capaz de hacer. Maximiza tus sesiones de juego con tiempos de carga casi inexistentes en juegos instalados en la PS5™. La integración a medida de los sistemas de la consola PS5™ permite a los desarrolladores extraer datos de la SSD tan rápido que son capaces de diseñar juegos de formas hasta ahora impensables. Déjate sorprender por unos gráficos increíbles y experimenta nuevas funciones de PS5™. Sumérgete en mundos con un nivel de realismo sin precedentes con haces de luz simulados individualmente para crear sombras y reflejos fieles a la realidad en juegos de PS5™ compatibles con la tecnología. Juega a tus títulos de PS5™ favoritos en tu espléndido televisor 4K. Disfruta de una experiencia de juego fluida hasta a 120 fps con juegos compatibles gracias a la salida a 120 Hz para pantallas 4K. Al conectar la PS5™ a un televisor con HDR, los juegos compatibles se ven con una gama de colores increíblemente intensa y realista. Las consolas PS5™ admiten salida 8K, por lo que puedes jugar en pantallas de 4320p. Descubre una experiencia de juego más profunda mediante tecnología háptica, gatillos adaptables y audio 3D. Sumérgete en paisajes sonoros en los que sentirás como si el sonido viniera de todas partes. Ya sea a través de unos auriculares o los altavoces del televisor, tu entorno cobrará vida al jugar a títulos compatibles con la tecnología de audio 3D Tempest. Experimenta la retroalimentación háptica con el mando inalámbrico DualSense™ en una selección de títulos de PS5™ y siente los efectos y el impacto de tus acciones dentro del juego mediante la retroalimentación sensorial dinámica. Familiarízate con los inmersivos gatillos adaptables, que ofrecen niveles de resistencia dinámicos para simular el impacto físico de las actividades dentro del juego en determinados títulos de PS5™.",
+          "codigo": "43312",
+          "url": "https://gorilagames.com/img/Public/1019-producto-ps5-estandar-preventa-argentina-gorila-games-4-903.jpg",
+          "precio": 199990,
+          "stock": 10
+        }
+      ]
+    }
+  ]

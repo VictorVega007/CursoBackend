@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "timestamp": "24/04/2022, 12:00:25",
+      "nombre": "PlayStation 5",
+      "descripcion": "Experimenta cargas superrápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de increíbles juegos de PlayStation®. Aprovecha la potencia de una unidad de estado sólido con E/S integradas, una CPU y una GPU personalizadas que reinventan las reglas de lo que una consola PlayStation es capaz de hacer. Maximiza tus sesiones de juego con tiempos de carga casi inexistentes en juegos instalados en la PS5™. La integración a medida de los sistemas de la consola PS5™ permite a los desarrolladores extraer datos de la SSD tan rápido que son capaces de diseñar juegos de formas hasta ahora impensables. Déjate sorprender por unos gráficos increíbles y experimenta nuevas funciones de PS5™. Sumérgete en mundos con un nivel de realismo sin precedentes con haces de luz simulados individualmente para crear sombras y reflejos fieles a la realidad en juegos de PS5™ compatibles con la tecnología. Juega a tus títulos de PS5™ favoritos en tu espléndido televisor 4K. Disfruta de una experiencia de juego fluida hasta a 120 fps con juegos compatibles gracias a la salida a 120 Hz para pantallas 4K. Al conectar la PS5™ a un televisor con HDR, los juegos compatibles se ven con una gama de colores increíblemente intensa y realista. Las consolas PS5™ admiten salida 8K, por lo que puedes jugar en pantallas de 4320p. Descubre una experiencia de juego más profunda mediante tecnología háptica, gatillos adaptables y audio 3D. Sumérgete en paisajes sonoros en los que sentirás como si el sonido viniera de todas partes. Ya sea a través de unos auriculares o los altavoces del televisor, tu entorno cobrará vida al jugar a títulos compatibles con la tecnología de audio 3D Tempest. Experimenta la retroalimentación háptica con el mando inalámbrico DualSense™ en una selección de títulos de PS5™ y siente los efectos y el impacto de tus acciones dentro del juego mediante la retroalimentación sensorial dinámica. Familiarízate con los inmersivos gatillos adaptables, que ofrecen niveles de resistencia dinámicos para simular el impacto físico de las actividades dentro del juego en determinados títulos de PS5™.",
+      "codigo": "43312",
+      "url": "https://gorilagames.com/img/Public/1019-producto-ps5-estandar-preventa-argentina-gorila-games-4-903.jpg",
+      "precio": 199990,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "timestamp": "03/04/2022, 12:05:08",
+      "nombre": "Control Inalámbrico DualSense PS5",
+      "descripcion": "Descubre una experiencia de juego más profunda mediante tecnología háptica, gatillos adaptables. Experimenta la retroalimentación háptica con el mando inalámbrico DualSense™ en una selección de títulos de PS5™ y siente los efectos y el impacto de tus acciones dentro del juego mediante la retroalimentación sensorial dinámica. Familiarízate con los inmersivos gatillos adaptables, que ofrecen niveles de resistencia dinámicos para simular el impacto físico de las actividades dentro del juego en determinados títulos de PS5™.",
+      "codigo": "43314",
+      "url": "https://gorilagames.com/img/Public/1019-producto-dualsense-ps5-7234.jpg",
+      "precio": 15499,
+      "stock": 15
+    },
+    {
+      "id": 3,
+      "timestamp": "03/04/2022, 12:11:42",
+      "nombre": "Auricular Inalámbrico Pulse 3D PS5",
+      "descripcion": "Disfruta de una experiencia inalámbrica perfecta con unos auriculares ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso. Los auriculares inalámbricos PULSE 3D se han ajustado específicamente para ofrecer el audio 3D que es posible gracias a la consola PlayStation®5. Gracias a la tecnología de Tempest 3D AudioTech, la consola PS5 puede colocarte en el centro de entornos acústicos increíblemente inmersivos, donde se siente como si el sonido viniera de todas las direcciones. Juega con estilo gracias a unos elegantes auriculares que complementan a la perfección el aspecto de la consola PS5 y que cuentan con elegantes almohadillas para los oídos y una correa de diadema para brindarte mayor comodidad. Asegúrate de que tus amigos online te escuchen con dos micrófonos integrados, colocados de forma óptima para una recepción de voz nítida y mejorados con la tecnología de reducción de ruido. Ajusta tu configuración mientras juegas con el silenciador del micrófono integrado, el volumen principal y el audio del juego mediante los controles de combinación del chat. También comprueba fácilmente cómo te escuchan tus compañeros de equipo con el botón de monitoreo del micrófono dedicado. Disfruta de hasta 12 horas de juego inalámbrico gracias a la batería recargable integrada. Conéctate a las consolas PS5 y PS4™, además de las computadoras compatibles con Windows y macOS® mediante el adaptador incluido. Solo conecta los auriculares a tu PlayStation®VR, además de los dispositivos móviles con el cable de audio con conector de 3,5 mm incluido.",
+      "codigo": "57985",
+      "url": "https://gorilagames.com/img/Public/1019-producto-pulse-3d-ps5-4-1669.jpg",
+      "precio": 17990,
+      "stock": 12
+    }
+  ]
