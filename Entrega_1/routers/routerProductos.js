@@ -47,7 +47,7 @@ routerProductos.put('/:id', async (req, res) => {
 		const response = await container.updateProduct(product, id);
 		res.json(response);
 	} else {
-		const response = { error: '-1', descripcion: "Ruta '/api/productos' método 'POST' no autorizada" };
+		const response = { error: '-1', descripcion: "Ruta '/api/productos/:id' método 'PUT' no autorizada" };
 		res.json(response);
 	}
 });
@@ -60,7 +60,7 @@ routerProductos.delete('/:id', async (req, res) => {
 		const response = await container.deleteProduct(id)
 		res.json(response)
 	} else {
-		const response = { error: '-1', descripcion: "Ruta '/api/productos' método 'POST' no autorizada" };
+		const response = { error: '-1', descripcion: "Ruta '/api/productos/:id' método 'DELETE' no autorizada" };
 		res.json(response);
 	}
 });
