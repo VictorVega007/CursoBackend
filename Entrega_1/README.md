@@ -2,6 +2,7 @@
 ## _Ecommerce Backend App_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 App Ecommerce en desarrollo con backend stacks como NodeJS, Express, Nodemon, entre otras. En esta entrega se configura todo el entorno de rutas hacia productos y el carrito de compras. Se crean funcionalidades de GET, POST, PUT y DELETE de productos; así como la posibilidad de agregar, modificar, eliminar productos del carrito de compras. 
 
 ## Inicializar la app
