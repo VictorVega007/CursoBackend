@@ -16,8 +16,13 @@ app.use(express.urlencoded({ extended: true }));
 
 routerProductos.get('/', async (req, res) => {
 	const arrayProductos = await container.getProducts();
-	res.json(arrayProductos);
+	// res.json(arrayProductos);
+	res.render('pages/listOfProducts', { arrayProductos });
 });
+
+routerProductos.get('/:id', (req, res) => {
+	res.render('pages/form', {});
+})
 
 routerProductos.get('/:id', async (req, res) => {
 	const id = req.params;

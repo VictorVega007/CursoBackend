@@ -1,0 +1,62 @@
+
+<h2>Agregar producto al listado</h2>
+<div class="row g-3">
+
+    <form class="row g-3" action="/productos" method="POST"> 
+    
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon1">Producto</span>
+                <input type="text" name="nombre" required class="form-control" placeholder="Nombre del producto" aria-label="Título" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Timestamp</span>
+                <input type="text" name="timestamp" required class="form-control" placeholder="Timestamp" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Descripción</span>
+                <input type="text" name="descripcion" required class="form-control" placeholder="Descripción" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Código</span>
+                <input type="text" name="codigo" required class="form-control" placeholder="Código" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon2">Precio</span>
+                <input type="text" name="precio" required class="form-control" placeholder="Precio del producto" aria-label="Precio" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Imagen</span>
+                <input type="text" name="url" required class="form-control" placeholder="Imagen (URL)" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="basic-addon3">Stock</span>
+                <input type="text" name="stock" required class="form-control" placeholder="Stock" aria-label="Thumbnail" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-sm" type="submit">Agregar producto</button>
+            </div>
+        </div>
+    </form>
+</div>
