@@ -225,4 +225,4 @@ mongo —auth —-dbpath “Colocar el path correspondiente”;
 	"errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"87e8b018-6ff1-4363-9c4e-14636c1a7e1f\") }, $db: \"ecommerce\" }",
 	"code" : 13,
 	"codeName" : "Unauthorized"
-	})```
+	})
