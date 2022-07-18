@@ -203,26 +203,27 @@ db.createUser({user: “pepe”, pwd: “asd456”, roles: [{role: “read”, d
 ```console
 mongo —auth —-dbpath “Colocar el path correspondiente”;
 
-	mongo -u pepe -p asd456;
+mongo -u pepe -p asd456;
 
-	db 
+db 
 	
-	test
+test
 	
-	use ecommerce
+use ecommerce
 
-	switched to db ecommerce
+switched to db ecommerce
 
-	> db.productos.insertOne({nombre: "Zapatillas"})
-	uncaught exception: WriteCommandError({
-	"ok" : 0,
-	"errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"87e8b018-6ff1-4363-9c4e-14636c1a7e1f\") }, $db: \"ecommerce\" }",
-	"code" : 13,
-	"codeName" : "Unauthorized"
-	}) :
-	WriteCommandError({
-	"ok" : 0,
-	"errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"87e8b018-6ff1-4363-9c4e-14636c1a7e1f\") }, $db: \"ecommerce\" }",
-	"code" : 13,
-	"codeName" : "Unauthorized"
-	})
+> db.productos.insertOne({nombre: "Zapatillas"})
+uncaught exception: WriteCommandError({
+"ok" : 0,
+"errmsg" : "not authorized on ecommerce to execute command {insert: \"productos\", ordered: true, lsid: { id: UUI(\"87e8b018-6ff1-4363-9c4e-14636c1a7e1f\") }, $db:\"ecommerce\" }",
+"code" : 13,
+"codeName" : "Unauthorized"
+}) :
+WriteCommandError({
+"ok" : 0,
+"errmsg" : "not authorized on ecommerce to execute command {insert: \"productos\", ordered: true, lsid: { id: UUI(\"87e8b018-6ff1-4363-9c4e-14636c1a7e1f\") }, $db:\"ecommerce\" }",
+"code" : 13,
+"codeName" : "Unauthorized"
+})
+```
