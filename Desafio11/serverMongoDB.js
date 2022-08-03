@@ -5,8 +5,6 @@ const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
 const normalizr = require('normalizr');
 const normalizrChatSchema = require('./public/normalizrSchema');
-// import path from 'path';
-// import { fileURLToPath } from 'url';
 
 const { Router } = express;
 const app = express();
@@ -14,9 +12,6 @@ const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);
 let usersArray = [];
 const PORT = 8080;
-
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -50,6 +45,7 @@ apiRouter.get('', async (req, res) => {
     const normLength = JSON.stringify(normalizedChat).length;
 
     console.log(messageCont);
+    console.log(normalizedChat);
     console.log('ORIGINAL: ', origLength);
     console.log('NORMALIZADO: ', normLength);
 
