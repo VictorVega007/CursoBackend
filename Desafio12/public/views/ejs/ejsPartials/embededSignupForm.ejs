@@ -1,16 +1,18 @@
 <div class="modal-dialog">
     <div class="modal-content">
-        <% if (message !== '') { %>
+        <% if(message != ''){ %>
             <div class="alert alert-warning" role="alert">
-                Error al registrarse <%= message %>
+                Error al registrarse: <%= message %>
             </div>
         <% } %>
         <div class="modal-header">
             <img src="https://cdn4.iconfinder.com/data/icons/internet-security-flat-2/32/Internet_Security_entrance_login_log_in_arrow-256.png" alt="logo" height="50">
             <h2>Registrarse</h2>
+            
         </div>
         <div class="modal-body">
-            <form role="form" method="POST" action="http://localhost:8080/signup">
+            <form role='form' method='POST' action='http://localhost:8080/signup'>
+                <!-- method='POST' action='http://localhost:8080/api/productos/' -->
                 <div class="form-group">
                     <label for="title">Nombre de Usuario</label>
                     <input type="text" class="form-control" id="userInput" placeholder="Ingrese nombre de usuario" name="username">
@@ -20,10 +22,11 @@
                     <input type="mail" class="form-control" id="emailInput" placeholder="Ingrese su email" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Contraseña</label>
+                    <label for="price">Contraseña</label>
                     <input type="password" class="form-control" id="passwordInput" placeholder="Ingrese su contraseña" name="password">
                 </div>
                 <button type="text" class="btn btn-success" id="submitSignup">Registrarse</button>
+                
             </form>
         </div>
     </div>

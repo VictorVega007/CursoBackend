@@ -15,7 +15,7 @@ class User {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
             });
-            console.log(`Connected to ${this.uri}`);
+            console.log(`[USER] Connected to MongoDB`);
         } catch (error) {
             throw Error(`Error connecting to mongoDB: ${error.message}`);
         };

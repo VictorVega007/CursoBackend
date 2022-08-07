@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const { Server: HttpServer, request } = require('http');
+const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
 const { Router } = express;
 const app = express();
@@ -43,10 +43,10 @@ app.use('/static', express.static(__dirname + '/public'));
 
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: '',
+        mongoUrl: 'mongodb+srv://victor:victor123@cluster0.5tx05.mongodb.net/desafio?retryWrites=true&w=majority',
         ttl: 60
     }),
-    secret: 'desafio12',
+    secret: 'qwerty',
     resave: true,
     saveUninitialized: true,
 }))
@@ -54,7 +54,7 @@ app.use(session({
 app.use(flash());
 
 // ==== Data base =====
-const uri = '';
+const uri = 'mongodb+srv://victor:victor123@cluster0.5tx05.mongodb.net/desafio?retryWrites=true&w=majority';
 
 // ==== Schemas =====
 const messagesSchema = require('./db/schema/mensajes');
@@ -75,7 +75,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // ==== Set Login ====
-passport.use('login', new LocalStrategy((username, password, done) => User.findOne({ username })
+passport.use('login', new LocalStrategy((username, password, done) => {
+    return User.findOne({ username })
     .then(user => {
         if (!user) {
             return done(null, false, { message: `User not found "${username}"` });
@@ -87,8 +88,8 @@ passport.use('login', new LocalStrategy((username, password, done) => User.findO
 
         return done(null, user);
     })
-    .catch(err => { done(err); 
-})));
+    .catch(err => done(err)); 
+}));
 
 // ==== Set Signup ====
 passport.use('signup', new LocalStrategy({ passReqToCallback: true }, (req, username, password, done) => {
@@ -197,7 +198,7 @@ server.on('error', err => { console.log(`Server error: ${err.message}`) });
 // ==== Set socket server ====
 io.on('connection', socket => {
     console.log(`New client connected ${socket.id}`);
-    usersArray.push(socket.id);
+    // usersArray.push(socket.id);
 
     socket.on('addProduct', async (newProduct) => {
         const newProductID = await products.save(newProduct);
@@ -216,7 +217,7 @@ io.on('connection', socket => {
     });
 
     socket.on('disconnect', reason => {
-        usersArray = usersArray.filter(user => user != socket.id);
+        // usersArray = usersArray.filter(user => user != socket.id);
         console.log(`Client disconnected: ${socket.id}`);
     });
 });
