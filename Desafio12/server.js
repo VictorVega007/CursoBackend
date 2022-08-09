@@ -16,18 +16,18 @@ const MongoStore = require('connect-mongo');
 // ==== Session Middleware ====
 const validateSession = (req, res, next) => {
     if (req.session.user && req.session.password) {
-        console.log(`Usuario válido. Sesión iniciada por: ${req.session.user}`);
+        console.log(`User validate. Session initialized by: ${req.session.user}`);
         return next();
     };
 
     if (req.body.user && req.body.password) {
         req.session.user = req.body.user;
         req.session.password = req.body.password;
-        console.log(`Se ha registrado el usuario ${req.session.user}`);
+        console.log(`User registred: ${req.session.user}`);
         return next();
     };
 
-    console.log('No existe el usuario. Inicie sesión');
+    console.log('User do not exist. Please, register.');
 
     return res.status(401).redirect('http://localhost:8080/login');
 };
