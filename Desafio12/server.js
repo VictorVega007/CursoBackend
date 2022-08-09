@@ -123,7 +123,6 @@ server.on('error', err => { console.log(`Server error: ${err.message}`) });
 // ==== Set socket server ====
 io.on('connection', socket => {
     console.log(`New client connected ${socket.id}`);
-    // usersArray.push(socket.id);
 
     socket.on('addProduct', async (newProduct) => {
         const newProductID = await products.save(newProduct);
@@ -142,7 +141,6 @@ io.on('connection', socket => {
     });
 
     socket.on('disconnect', reason => {
-        // usersArray = usersArray.filter(user => user != socket.id);
         console.log(`Client disconnected: ${socket.id}`);
     });
 });
