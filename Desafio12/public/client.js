@@ -1,11 +1,11 @@
-const socket = io();
-console.log('I AM A CLIENT');
+const socket = io()
+console.log('SOY UN CLIENTE')
 
-const submitProduct = document.getElementById('submitProduct');
-const productsTable = document.getElementById('productsTableBody');
+const submitProduct = document.getElementById('submitProduct')
+const productsTable = document.getElementById('productsTableBody')
 
-const submitMessage = document.getElementById('submitMessage');
-const messageTable = document.getElementById('messageTableBody');
+const submitMessage = document.getElementById('submitMessage')
+const messageTable = document.getElementById('messageTableBody')
 
 submitProduct.addEventListener('click', (event) => {
     event.preventDefault()
@@ -15,12 +15,12 @@ submitProduct.addEventListener('click', (event) => {
         thumbnail: document.getElementById('thumbnail').value
     }
     if((newProduct.title == '') || (newProduct.price == '') || (newProduct.thumbnail == '')){
-        console.log('faltan datos');
+        console.log('faltan datos')
     } else {
-        document.getElementById('title').value = '';
-        document.getElementById('price').value = '';
-        document.getElementById('thumbnail').value = '';
-        socket.emit('addProduct', newProduct);
+        document.getElementById('title').value = ''
+        document.getElementById('price').value = ''
+        document.getElementById('thumbnail').value = ''
+        socket.emit('addProduct', newProduct)
     }
 })
 
@@ -34,12 +34,12 @@ socket.on('refreshList', data3 => {
                 ${data3.price}
             </td>
             <td><img src=${data3.thumbnail} alt="product image" width="50" height="50"></td>
-        </tr>`;
-    productsTable.innerHTML += newItem;
-});
+        </tr>`
+    productsTable.innerHTML += newItem
+})
 
 submitMessage.addEventListener('click', (event) => {
-    event.preventDefault();
+    event.preventDefault()
     const newMessage = {
         author: {
             id: document.getElementById('emailInput').value,
@@ -52,14 +52,15 @@ submitMessage.addEventListener('click', (event) => {
         text: document.getElementById('messageInput').value
     }
     if((newMessage.mail == '') || (newMessage.message == '')){
-        console.log('faltan datos');
+        console.log('faltan datos')
     } else {
         document.getElementById('messageInput').value = ''
-        socket.emit('addMessage', newMessage);
+        socket.emit('addMessage', newMessage)
     }
 })
 
 socket.on('refreshMessages', messageCont  => {
+    // console.log(normalizedChat)
     const newItem = 
         `<tr>
             <th scope="row" style="color:blue">
@@ -71,6 +72,6 @@ socket.on('refreshMessages', messageCont  => {
             <td>
                 ${messageCont.text}
             </td>
-        </tr>`;
-    messageTable.innerHTML += newItem;
-});
+        </tr>`
+    messageTable.innerHTML += newItem
+})

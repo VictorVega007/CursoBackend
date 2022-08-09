@@ -8,26 +8,26 @@
 <body>
 
     <%- include('./ejsPartials/header.ejs') %>
-    
+
     <div>
         <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                <div class="alert alert-warning" role="alert">
-                    Bienvenido <%= user %>!
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="alert alert-warning" role="alert">
+                        Bienvenido <%= user %>!
+                    </div>
+                    <a href="http://localhost:8080/logout">
+                        <button type="text" class="btn btn-danger" id="submitLogout">Logout</button>
+                    </a>
                 </div>
-                <a href="http://localhost:8080/logout">
-                    <button type="text" class="btn btn-danger" id="submitLogout">Logout</button>
-                </a>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <%- include('./ejsPartials/embededForm.ejs') %>
     <%- include('./ejsPartials/embededProductList.ejs') %>
     <%- include('./ejsPartials/embededChat.ejs') %>
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script> -->
     <!-- <script src="../../static/normalizrSchema.js"></script> -->
     <script src="/socket.io/socket.io.js"></script>

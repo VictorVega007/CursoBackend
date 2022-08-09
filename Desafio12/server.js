@@ -9,10 +9,6 @@ const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);
 
 const session = require('express-session');
-const passport = require('passport');
-const { Strategy: LocalStrategy } = require('passport-local');
-const { createHash, isValidPassword } = require('./utils/bycrypt');
-const flash = require('connect-flash');
 const PORT = 8080;
 
 const MongoStore = require('connect-mongo');
@@ -49,9 +45,7 @@ app.use(session({
     secret: 'qwerty',
     resave: true,
     saveUninitialized: true,
-}))
-
-app.use(flash());
+}));
 
 // ==== Data base =====
 const uri = 'mongodb+srv://victor:victor123@cluster0.5tx05.mongodb.net/desafio?retryWrites=true&w=majority';
@@ -68,104 +62,35 @@ const ProductsDAOMongoDB = require('./db/daos/ProductosDAOMongoDB');
 const messages = new MessagesDAOMongoDB('mensaje', messagesSchema, uri);
 const products = new ProductsDAOMongoDB('producto', productsSchema, uri);
 
-const User = require('./db/models/user');
-
-// ==== Passport configuration ====
-app.use(passport.initialize());
-app.use(passport.session());
-
-// ==== Set Login ====
-passport.use('login', new LocalStrategy((username, password, done) => {
-    return User.findOne({ username })
-    .then(user => {
-        if (!user) {
-            return done(null, false, { message: `User not found "${username}"` });
-        };
-
-        if (!isValidPassword(user.password, password)) {
-            return done(null, false, { message: `Invalid password (${password})` });
-        };
-
-        return done(null, user);
-    })
-    .catch(err => done(err)); 
-}));
-
-// ==== Set Signup ====
-passport.use('signup', new LocalStrategy({ passReqToCallback: true }, (req, username, password, done) => {
-    return User.findOne({ username })
-     .then(user => {
-        if (user) {
-            return done(null, false, { message: `User "${username}" already exists` });
-        };
-
-        const newUser = new User();
-        newUser.username = username;
-        newUser.password = createHash(password);
-        newUser.email = req.body.email;
-
-        return newUser.save(); 
-     })
-     .then(user => done(null, user))
-     .catch(err => done(err));
-}));
-
-passport.serializeUser((user, done) => {
-    done(null, user._id);
-});
-
-passport.deserializeUser((id, done) => {
-    User.findById(id, (err, user) => {
-        done(err, user);
-    });
-});
-
 // ==== Set Routes ====
 const apiRouter = Router();
 const loginRouter = Router();
 const logoutRouter = Router();
-const signupRouter = Router();
 
 app.use('/api/productos', apiRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
-app.use('/signup', signupRouter);
 
-apiRouter.get('', async (req, res) => {
+apiRouter.get('', validateSession, async (req, res) => {
     const data3 = await products.getAll();
     const messageCont = await messages.getAll();
+    const user = req.session.user;
 
-    if(req.user) {
-        const user = req.user.email;
-        return res.render('home', {
-            status: 1, 
-            data3,
-            messageCont,
-            user
-        });
-    };
-    res.redirect('/login');
+    return res.render('home', {
+        status: 1, 
+        data3,
+        messageCont,
+        user
+    });
 });
 
 loginRouter.get('', (req, res) => {
-    return res.render('login', { message: req.flash('error') });
+    return res.render('login');
 });
 
-loginRouter.post('', passport.authenticate('login', {
-    successRedirect: '/api/productos',
-    failureRedirect: '/login',
-    failureFlash: true
-}));
-
-signupRouter.get('', (req, res) => {
-    return res.render('signup', { message: req.flash('error') });
+loginRouter.post('/auth', validateSession, (req, res) => {
+    return res.status(200).redirect('http://localhost:8080/api/productos');
 });
-
-signupRouter.post('', passport.authenticate('signup', {
-    successRedirect: '/login',
-    failureRedirect: '/signup',
-    failureFlash: true
-}));
 
 logoutRouter.get('', (req, res) => {
     const user = req.session.user;

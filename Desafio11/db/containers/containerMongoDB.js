@@ -1,9 +1,10 @@
 'use strict';
-
+const { ClientSession } = require('mongodb');
 const mongoose = require('mongoose');
 
 class containerMongoDb {
     constructor(collectionName, schema, uri) {
+        this.name = collectionName.toUpperCase();
         this.collection = mongoose.model(collectionName, schema);
         this.uri = uri;
         this.mongoConnect();
@@ -15,7 +16,7 @@ class containerMongoDb {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
             })
-            console.log('MongoDB connected');
+            console.log(`[${this.name}] MongoDB connected`);
         } catch (error) {
             throw new Error(`Error connecting to MongoDB: ${console.log(error)}`);
         };
