@@ -60,7 +60,6 @@ submitMessage.addEventListener('click', (event) => {
 })
 
 socket.on('refreshMessages', messageCont  => {
-    // console.log(normalizedChat)
     const newItem = 
         `<tr>
             <th scope="row" style="color:blue">
