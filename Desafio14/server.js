@@ -200,11 +200,11 @@ infoRouter.get('', async (req, res) => {
 
     if(req.user) {
         const processInfo = [
-            {name:"consoleArg", value: process.argv.slice(2)},
+            {name:"consoleArg", value: process.argv},
             {name: "platformName", value: process.platform},
             {name: "nodeVersion", value: process.version},
             {name: "memoryUsage", value: process.memoryUsage().rss},
-            {name: "path", value: process.path},
+            {name: "path", value: process.execPath},
             {name: "processId", value: process.pid},
             {name: "folder", value: process.cwd()},
         ];
