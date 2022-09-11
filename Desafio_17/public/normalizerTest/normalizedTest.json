@@ -1,0 +1,182 @@
+{
+    "entities": {
+        "authors": {
+            "vv@hotmail.com": {
+                "id": "vv@hotmail.com",
+                "nombre": "Victor",
+                "apellido": "Vega",
+                "edad": "36",
+                "alias": "Vic",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "miguel@hotmail.com": {
+                "id": "miguel@hotmail.com",
+                "nombre": "Miguel",
+                "apellido": "Soto",
+                "edad": "24",
+                "alias": "Migue",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "ana@gmail.com": {
+                "id": "ana@gmail.com",
+                "nombre": "Ana",
+                "apellido": "Rodriguez",
+                "edad": "28",
+                "alias": "Anita",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "rodri@gmail.com": {
+                "id": "rodri@gmail.com",
+                "nombre": "Rodrigo",
+                "apellido": "Mendez",
+                "edad": 30,
+                "alias": "Rodri",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "angel@hotmail.com": {
+                "id": "angel@hotmail.com",
+                "nombre": "Angel",
+                "apellido": "Zerpa",
+                "edad": 23,
+                "alias": "Angel",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "mandy@hotmail.com": {
+                "id": "mandy@hotmail.com",
+                "nombre": "Amanda",
+                "apellido": "Castro",
+                "edad": 25,
+                "alias": "Mandy",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "rodrigo@gmail.com": {
+                "id": "rodrigo@gmail.com",
+                "nombre": "Prof. Augusto",
+                "apellido": "Mena",
+                "edad": 28,
+                "alias": "Rodri",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "hector@gmail.com": {
+                "id": "hector@gmail.com",
+                "nombre": "Hector",
+                "apellido": "Perez",
+                "edad": 36,
+                "alias": "Hector",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "andreina@gmail.com": {
+                "id": "andreina@gmail.com",
+                "nombre": "Andreina",
+                "apellido": "Gimenez",
+                "edad": 25,
+                "alias": "Andre",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "wendy@gmail.com": {
+                "id": "wendy@gmail.com",
+                "nombre": "Wendy",
+                "apellido": "Scott",
+                "edad": 24,
+                "alias": "Wendy",
+                "avatar": "../static/icons/generic_avatar.png"
+            },
+            "andres@gmail.com": {
+                "id": "andres@gmail.com",
+                "nombre": "Andres",
+                "apellido": "Hidalgo",
+                "edad": 30,
+                "alias": "Andrew",
+                "avatar": "../static/icons/generic_avatar.png"
+            }
+        },
+        "chat": {
+            "new ObjectId(62cb4348705074ace651362e)": {
+                "_id": "new ObjectId(62cb4348705074ace651362e)",
+                "author": "vv@hotmail.com",
+                "text": "Hola como estan?",
+                "__v": 0
+              },
+              "new ObjectId(62e9475181ff2c516bd1694e)": {
+                "_id": "new ObjectId(62e9475181ff2c516bd1694e)",
+                "author": "miguel@hotmail.com",
+                "text": "Hola grupo aquí probando Normalizr",
+                "__v": 0
+              },
+              "new ObjectId(62e9493881ff2c516bd16954)": {
+                "_id": "new ObjectId(62e9493881ff2c516bd16954)",
+                "author": "ana@gmail.com",
+                "text": "Alguien sabe como ingresar normalizr a un proyecto?",
+                "__v": 0
+              },
+              "new ObjectId(62e9497881ff2c516bd16956)": {
+                "_id": "new ObjectId(62e9497881ff2c516bd16956)",
+                "author": "rodri@gmail.com",
+                "text": "Deberías instalar la dependencia y leer la documentación de Normalizr. Saludos!",
+                "__v": 0
+              },
+              "new ObjectId(62e94a3b81ff2c516bd16958)": {
+                "_id": "new ObjectId(62e94a3b81ff2c516bd16958)",
+                "author": "ana@gmail.com",
+                "text": "Gracias Rodri, lo voy a hacer!",
+                "__v": 0
+              },
+              "new ObjectId(62ea7e19ef9e56cc454e5f18)": {
+                "_id": "new ObjectId(62ea7e19ef9e56cc454e5f18)",
+                "author": "angel@hotmail.com",
+                "text": "Hola grupo, a que hora es la clase de hoy?",
+                "__v": 0
+              },
+              "new ObjectId(62ea7e62ef9e56cc454e5f1a)": {
+                "_id": "new ObjectId(62ea7e62ef9e56cc454e5f1a)",
+                "author": "mandy@hotmail.com",
+                "text": "Hola Angel, la clase es a las 17 hrs",
+                "__v": 0
+              },
+              "new ObjectId(62ea7ee0ef9e56cc454e5f1c)": {
+                "_id": "new ObjectId(62ea7ee0ef9e56cc454e5f1c)",
+                "author": "rodrigo@gmail.com",
+                "text": "Hola grupo! nos vemos hoy en clases.",
+                "__v": 0
+              },
+              "new ObjectId(62ea8012ef9e56cc454e5f1e)": {
+                "_id": "new ObjectId(62ea8012ef9e56cc454e5f1e)",
+                "author": "hector@gmail.com",
+                "text": "Nos vemos hoy en clases. Hay algún desafío?",
+                "__v": 0
+              },
+              "new ObjectId(62ea8048ef9e56cc454e5f20)": {
+                "_id": "new ObjectId(62ea8048ef9e56cc454e5f20)",
+                "author": "andreina@gmail.com",
+                "text": "Hola a todos! Sí Hector hoy hay desafío entregable.",
+                "__v": 0
+              },
+              "new ObjectId(62ea858def9e56cc454e5f22)": {
+                "_id": "new ObjectId(62ea858def9e56cc454e5f22)",
+                "author": "wendy@gmail.com",
+                "text": "Espero estén bien! Ya tengo mi desafío listo!",
+                "__v": 0
+              },
+              "new ObjectId(62ea862fef9e56cc454e5f24)": {
+                "_id": "new ObjectId(62ea862fef9e56cc454e5f24)",
+                "author": "wendy@gmail.com",
+                "text": "Que bueno Wendy, podrías ayudarme con el mío?",
+                "__v": 0
+              }
+        }
+    },
+    "results": [ 
+        "new ObjectId(62cb4348705074ace651362e)",
+        "new ObjectId(62e9475181ff2c516bd1694e)",
+        "new ObjectId(62e9493881ff2c516bd16954)",
+        "new ObjectId(62e9497881ff2c516bd16956)",
+        "new ObjectId(62e94a3b81ff2c516bd16958)",
+        "new ObjectId(62ea7e19ef9e56cc454e5f18)",
+        "new ObjectId(62ea7e62ef9e56cc454e5f1a)",
+        "new ObjectId(62ea7ee0ef9e56cc454e5f1c)",
+        "new ObjectId(62ea8012ef9e56cc454e5f1e)",
+        "new ObjectId(62ea8048ef9e56cc454e5f20)",
+        "new ObjectId(62ea858def9e56cc454e5f22)",
+        "new ObjectId(62ea862fef9e56cc454e5f24)"
+    ]
+}

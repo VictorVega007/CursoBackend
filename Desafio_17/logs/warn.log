@@ -1,0 +1,16 @@
+[2022-09-06T11:11:31.488] [WARN] warning - /favicon.ico GET
+[2022-09-06T11:11:45.722] [WARN] warning - /logins GET
+[2022-09-06T13:24:04.574] [WARN] warning - /api/productos/1 GET
+[2022-09-06T13:24:27.231] [WARN] warning - /api/productos/test GET
+[2022-09-06T13:24:56.822] [WARN] warning - / GET
+[2022-09-06T13:25:41.166] [WARN] warning - /error GET
+[2022-09-06T13:31:53.097] [WARN] warning - /api/productos/all GET
+[2022-09-06T13:33:18.041] [WARN] warning - /api/info GET
+[2022-09-06T13:49:26.177] [WARN] warning - /api/productos/1 GET
+[2022-09-06T13:51:42.716] [WARN] warning - /infos GET
+[2022-09-06T15:32:38.658] [WARN] warning - / GET
+[2022-09-06T15:37:14.818] [WARN] warning - /api/productosl GET
+[2022-09-06T20:14:08.083] [WARN] warning - /api/products GET
+[2022-09-06T21:53:33.619] [WARN] warning - / GET
+[2022-09-07T13:47:42.133] [WARN] warning - /favicon.ico GET
+[2022-09-11T15:31:24.048] [WARN] warning - /favicon.ico GET
