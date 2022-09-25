@@ -1,7 +1,7 @@
 {
-  "name": "pre-entrega3",
+  "name": "desafio19",
   "version": "1.0.0",
-  "description": "Tercera entrega proyecto final backend Coderhouse",
+  "description": "Desafio aplicando capas al proyecto",
   "author": "Victor Vega",
   "main": "./src/server.js",
   "type": "module",
