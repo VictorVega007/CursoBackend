@@ -15,7 +15,7 @@ export const create = async (req, res) => {
 
 export const remove = async (req, res) => {
     const { id } = req.params;
-    const cartDeleted = await cartService.deleteById(id);
+    const cartDeleted = await cartService.deleteCartById(id);
 
     cartDeleted
         ? res.status(200).json({'success': 'The cart was successfully deleted'})
