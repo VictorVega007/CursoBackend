@@ -4,7 +4,7 @@ import { UserService } from '../services/user.service.js';
 import { sendGmail } from '../utils/notifications/gmail/EmailSender.js';
 import { htmlNewUserTemplate } from '../utils/notifications/gmail/htmltemplates/NewUserCreatedTemplate.js';
 
-const userService = new UserService.getInstance();
+const userService = UserService.getInstance();
 
 export const loginView = async (req, res) => {
     if (req.session.login) {
@@ -43,6 +43,8 @@ export const logIn = async (req, res) => {
         username: user,
         password: pass
     });
+
+    console.log(loggedUser)
 
     if (loggedUser) {
         req.session.login = true;

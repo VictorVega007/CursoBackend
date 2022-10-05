@@ -1,0 +1,5 @@
+[2022-10-02T11:37:10.569] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'password')
+    at model.Schema.methods.comparePassword (file:///Users/victorvega/Documents/Desafio_1/Desafio19/src/models/users.model.js:50:55)
+    at UserService.loginUser (file:///Users/victorvega/Documents/Desafio_1/Desafio19/src/services/user.service.js:31:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async logIn (file:///Users/victorvega/Documents/Desafio_1/Desafio19/src/controllers/user.controller.js:42:24)

@@ -2,7 +2,7 @@
 
 import { ProductService } from '../services/product.service.js';
 
-const productService = new ProductService.getInstance();
+const productService = ProductService.getInstance();
 
 export const getAll = async (req, res) => {
     const products = await productService.getAll();
