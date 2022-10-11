@@ -1,0 +1,467 @@
+[2022-10-10T13:53:18.942] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T13:58:13.156] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T13:59:07.887] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'password')
+    at model.Schema.methods.comparePassword (file:///Users/victorvega/Documents/Desafio_1/Desafio21/src/models/users.model.js:50:55)
+    at UserService.loginUser (file:///Users/victorvega/Documents/Desafio_1/Desafio21/src/services/user.service.js:43:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async logIn (file:///Users/victorvega/Documents/Desafio_1/Desafio21/src/controllers/user.controller.js:42:24)
+[2022-10-10T13:59:49.911] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T14:03:17.194] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T14:03:47.625] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T14:04:47.310] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T16:46:29.148] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T16:47:09.977] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T16:51:56.998] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-10T19:53:03.642] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T12:03:44.786] [ERROR] default - Error: listen EADDRINUSE: address already in use :::3031
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/express/lib/application.js:618:24)
+    at file:///Users/victorvega/Documents/Desafio_1/Desafio21/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:88:5)
+    at async handleMainPromise (node:internal/modules/run_main:61:12) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3031
+}
+[2022-10-11T12:04:41.670] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T12:09:04.210] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T13:30:31.411] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T14:36:11.486] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T14:36:11.718] [ERROR] default - CastError: Cast to ObjectId failed for value "{ _id: 'non-existent-id' }" (type Object) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: `"{ _id: 'non-existent-id' }"`,
+  kind: 'ObjectId',
+  value: { _id: 'non-existent-id' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:20:14)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:291:34)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'Object'
+}
+[2022-10-11T14:41:29.738] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T14:41:32.968] [ERROR] default - CastError: Cast to ObjectId failed for value "{ _id: 'non-existent-id' }" (type Object) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: `"{ _id: 'non-existent-id' }"`,
+  kind: 'ObjectId',
+  value: { _id: 'non-existent-id' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:20:14)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:291:34)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'Object'
+}
+[2022-10-11T14:51:35.871] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T14:51:37.257] [ERROR] default - CastError: Cast to ObjectId failed for value "{ _id: 'non-existent-id' }" (type Object) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: `"{ _id: 'non-existent-id' }"`,
+  kind: 'ObjectId',
+  value: { _id: 'non-existent-id' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:20:14)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:291:34)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'Object'
+}
+[2022-10-11T14:57:11.525] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:347:32)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'string'
+}
+[2022-10-11T14:57:11.856] [ERROR] default - CastError: Cast to ObjectId failed for value "{ _id: 'non-existent-id' }" (type Object) at path "_id" for model "productos"
+    at model.Query.exec (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4891:21)
+    at model.Query.Query.then (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: `"{ _id: 'non-existent-id' }"`,
+  kind: 'ObjectId',
+  value: { _id: 'non-existent-id' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast/objectid.js:20:14)
+      at ObjectId.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/cast.js:291:34)
+      at model.Query.Query.cast (/Users/victorvega/Documents/Desafio_1/Desafio21/node_modules/mongoose/lib/query.js:5319:12),
+  valueType: 'Object'
+}
