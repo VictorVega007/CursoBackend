@@ -31,12 +31,12 @@ http://localhost:3031/graphql
 
 - Crear producto
 
-<img src="/img/mutation.png" alt="mutation-graphql"/>
+<img src="img/mutation.png" alt="mutation-graphql"/>
 
 - Eliminar producto por ID
 
-<img src="/img/mutation1.png" alt="mutation1-graphql"/>
+<img src="img/mutation1.png" alt="mutation1-graphql"/>
 
 #### Ejemplo de queies en GraphQl
 
-<img src="/img/query.png" alt="query-graphql"/>
+<img src="img/query.png" alt="query-graphql"/>
