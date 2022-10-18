@@ -37,6 +37,6 @@ http://localhost:3031/graphql
 
 <img src="img/mutation1.png" alt="mutation1-graphql"/>
 
-#### Ejemplo de queies en GraphQl
+#### Ejemplo de queies en GraphQL
 
 <img src="img/query.png" alt="query-graphql"/>
